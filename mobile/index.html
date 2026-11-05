@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru" data-theme="contour" data-mode="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eef3f8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Восемнадцать интерактивных первых экранов Веб Анатомии для телефона и десктопа: рельеф, оптика, частицы и радиальный градиент. Светлое, тёмное и комбинированное оформление.">
+  <title>Первые экраны · Веб Анатомия</title>
+  <link rel="icon" href="../assets/logo-sign.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/wa-flex-wide.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./mobile.css">
+  <link rel="stylesheet" href="./responsive.css">
+  <script type="importmap">{"imports":{"three":"../vendor/three.module.js","three/addons/":"../vendor/addons/"}}</script>
+</head>
+<body>
+  <div class="device">
+    <header class="top">
+      <div class="signature"><i class="mark" aria-hidden="true"></i><span>ВЕБ<br>АНАТОМИЯ</span></div>
+      <nav class="top-links" aria-label="Другие исследования"><a class="lab-link" href="../">Все сцены</a><a class="lab-link" href="../marks/">Знаки <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <div class="appearance-bar">
+      <div class="theme-switch" role="group" aria-label="Оформление экрана">
+        <button id="theme-light" type="button" aria-pressed="true"><i class="swatch swatch-light" aria-hidden="true"></i>Светлый</button>
+        <button id="theme-dark" type="button" aria-pressed="false"><i class="swatch swatch-dark" aria-hidden="true"></i>Тёмный</button>
+        <button id="theme-mixed" type="button" aria-pressed="false"><i class="swatch swatch-mixed" aria-hidden="true"></i><span id="mixed-label">Комби</span></button>
+      </div>
+    </div>
+    <main id="hero" class="hero" role="tabpanel" aria-labelledby="tab-01">
+      <div class="intro">
+        <div class="intro-bar"><div class="tag"><i aria-hidden="true"></i><span id="kicker">01 / ИМПУЛЬС</span></div><span id="composition-label" class="composition-label" hidden>Синий постер</span></div>
+        <h1 id="headline"><span class="line"><span>ФОРМА</span></span><span class="line"><span>ЖИВЁТ<i>.</i></span></span></h1>
+        <div id="service-controls" class="service-controls" role="group" aria-label="Услуги" hidden>
+          <button id="service-design" type="button" aria-controls="stage" aria-pressed="true">Дизайн</button>
+          <button id="service-development" type="button" aria-controls="stage" aria-pressed="false">Разработка</button>
+          <button id="service-support" type="button" aria-controls="stage" aria-pressed="false">Поддержка</button>
+        </div>
+      </div>
+      <div class="picture">
+        <div id="gradient-backdrop" class="gradient-backdrop" aria-hidden="true" hidden></div>
+        <div id="stage" class="stage" role="img" aria-label="Интерактивный рельеф знака. Коснись, чтобы пустить волну."></div>
+        <div id="message" class="message" role="status">Загружаю сцену…</div>
+        <span id="scene-index" class="scene-index" aria-hidden="true" hidden>FIELD / 01</span>
+        <i class="scene-corner" aria-hidden="true"></i>
+      </div>
+      <div class="caption">
+        <div class="caption-copy">
+          <p id="description">Делаем сайты, которые чувствуются.</p>
+          <p class="gesture"><span class="gesture-icon" aria-hidden="true">↳</span><span id="hint">Коснись, чтобы пустить волну</span></p>
+        </div>
+        <div class="actions" aria-label="Управление анимацией">
+          <button id="assemble" class="fragment-action" type="button" aria-controls="stage" hidden disabled><span id="assemble-label">Собрать знак</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+          <button id="pulse" type="button" aria-label="Пустить импульс" title="Пустить импульс" hidden disabled><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/></svg></button>
+          <button id="pause" type="button" aria-label="Пауза" title="Пауза" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path id="pause-shape" d="M9 5v14M15 5v14"/></svg></button>
+          <button id="replay" type="button" aria-label="Повторить анимацию" title="Повторить анимацию" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></svg></button>
+        </div>
+      </div>
+    </main>
+    <div class="variant-nav">
+      <div class="variant-groups" role="group" aria-label="Разделы коллекции">
+        <button id="variant-core" type="button" aria-controls="variants" aria-pressed="true">Основные <small>01–09</small></button>
+        <button id="variant-studies" type="button" aria-controls="variants" aria-pressed="false">Новые эффекты <small>10–18</small></button>
+      </div>
+      <nav class="tabs" id="variants" role="tablist" aria-label="Варианты первого экрана">
+      <button id="tab-01" type="button" role="tab" aria-controls="hero" aria-selected="true"><span>01</span> Импульс</button>
+      <button id="tab-02" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1"><span>02</span> Сборка</button>
+      <button id="tab-03" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1"><span>03</span> Оптика</button>
+      <button id="tab-04" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1"><span>04</span> Линза · круги</button>
+      <button id="tab-05" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1"><span>05</span> Плотный рельеф</button>
+      <button id="tab-06" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1"><span>06</span> Услуги</button>
+      <button id="tab-07" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1"><span>07</span> Градиент</button>
+      <button id="tab-08" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1"><span>08</span> Морфинг</button>
+      <button id="tab-09" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1"><span>09</span> Фаски</button>
+      <button id="tab-10" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1" hidden><span>10</span> Растр</button>
+      <button id="tab-11" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1" hidden><span>11</span> Лучевой узел</button>
+      <button id="tab-12" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1" hidden><span>12</span> Матрица</button>
+      <button id="tab-13" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1" hidden><span>13</span> Вихрь</button>
+      <button id="tab-14" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1" hidden><span>14</span> Плоттер</button>
+      <button id="tab-15" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1" hidden><span>15</span> Призма</button>
+      <button id="tab-16" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1" hidden><span>16</span> Фрагмент</button>
+      <button id="tab-17" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1" hidden><span>17</span> Фокус</button>
+      <button id="tab-18" class="tab-new" type="button" role="tab" aria-controls="hero" aria-selected="false" tabindex="-1" hidden><span>18</span> Наклон</button>
+      </nav>
+    </div>
+    <noscript><p>Включи JavaScript, чтобы увидеть движение.</p></noscript>
+  </div>
+  <script type="module" src="./mobile.js"></script>
+</body>
+</html>
